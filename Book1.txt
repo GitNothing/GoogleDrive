@@ -1,0 +1,22 @@
+Reauthenticate()	Initialize or reinitialize oauth2 authentication with Google
+DeleteFile(String id) returns Boolean	SELF-EXPLANATORY
+"UpdateFile(String filePath, String fileId) returns String"	SELF-EXPLANATORY
+"CreateFile(String filePath, String folderId, Boolean isPublic) returns String"	SELF-EXPLANATORY
+"ShareLinkToggle(String fileId, Boolean isOn) returns GoogleDriveFileData"	Turn share link on and off
+"CreateFolder(String name, String folderId, Boolean isPublic) returns String"	"Note, isPublic=true will turn share link on after folder creation"
+GetFileById(String id) returns GoogleDriveFileData	SELF-EXPLANATORY
+"DownloadFile(String fileID, String fullPathAndFileName)"	SELF-EXPLANATORY
+DeleteEmptyFolder(String folderID) returns Boolean	Deletes any subfolder with empty content within the current folder
+GetFilesInFolder(String folderID) returns List of GoogleDriveFileData	SELF-EXPLANATORY
+"GetFiles(String search, String field) returns List of GoogleDriveFileData"	SELF-EXPLANATORY
+Action<float> ProgressCallbackCreate	Assign an action delegate to this property to get upload progress
+Action<float> ProgressCallbackUpdate	Assign an action delegate to this property to get update progress
+	
+	
+	
+String Name	Name of file or folder
+String Id	SELF-EXPLANATORY
+List of String Parents	One level up folder ID
+Boolean IsShared	Share link active or not
+String Link	URL of share link
+List of String Permissions	SELF-EXPLANATORY
